@@ -1,13 +1,12 @@
 export type WeatherNow = {
   cityName : string,
-  speedWind: number,
   temperature: number,
 }
-export type Wind = {
-  speed : number,
-  deg : number,
+export type ObjectMain = {
+  temp : number,
 }
+
 export interface ResponseServerObject {
-  wind: Wind,
+  main: ObjectMain,
   name: string,
 }

@@ -2,14 +2,12 @@ import { ResponseServerObject, WeatherNow } from "../types/types";
 
 export const normalaizeResponseServer = (
   {
-    "wind": {
-        "speed": speedWind,
-        "deg": temperature,
-    },
+    "main": {
+      "temp": temperature,
+  },
     "name": cityName,
   } : ResponseServerObject) : WeatherNow => ({
     cityName,
-    temperature,
-    speedWind
+    temperature
   });
 
